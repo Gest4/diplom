@@ -59,7 +59,7 @@ function renderQuestion(){
   test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label><br><br>";
-  test.innerHTML += "<button type="button" class="btn btn-primary" onclick='checkAnswer()'>Submit Answer</button>";
+  test.innerHTML += "<button class="btn btn-primary" onclick='checkAnswer()'>Submit Answer</button>";
 }
 function checkAnswer(){
   // use getElementsByName because we have an array which it will loop through
