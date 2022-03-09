@@ -60,6 +60,8 @@ html, body {
 
 .img1:hover{
 	width: 75px;
+	bottom: 125px;
+	right: 125px;
 	filter: alpha (Opacity=25);
     opacity: 0.25;
 	}
