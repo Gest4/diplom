@@ -2,7 +2,7 @@ var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correc
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
 var questions = [
   {
-    question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",
+    question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",//70%=3 80%=
     a: "1",
     b: "3",
     c: "10",
@@ -44,10 +44,10 @@ var questions = [
     answer: "A"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
+    question: "Имеется сеть 128.138.243.0/16, какая сетевая маска больше подходит?",
+    a: "255.255.0.0",
+    b: "255.255.255.0",
+    c: "255.0.0.0",
     answer: "A"
   },
   {
