@@ -44,11 +44,137 @@ var questions = [
     answer: "A"
   },
   {
-    question: "Какая команда меняет шлюз устройства Cisco?",
-    a: "ip name-domain",
-    b: "ip set-domain",
-    c: "ip domain-name",
-    answer: "C"
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",//10
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",//15
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",//20
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
+  },
+  {
+    question: "...",//25
+    a: "...",
+    b: "...",
+    c: "...",
+    answer: "A"
   }
 ];
 // this get function is short for the getElementById function
