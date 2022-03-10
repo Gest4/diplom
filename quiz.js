@@ -39,11 +39,11 @@ function renderQuestion(){
   chB = questions[pos].b;
   chC = questions[pos].c;
   // display the question
-  test.innerHTML = "<h3>"+question+"</h3>";
+  test.innerHTML = "<h3>"+question+"</h3><br>";
   // display the answer options
   // the += appends to the data we started on the line above
-  test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br>";
+  test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br><br>";
+  test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label><br><br>";
   test.innerHTML += "<button onclick='checkAnswer()'>Далее</button>";
 }
