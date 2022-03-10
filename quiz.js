@@ -185,9 +185,9 @@ function get(x){
 function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
-    test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов оценка 5</h2>"
-    if (correct <=5) {
-      test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов оценка 2</h2>"
+    test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 5</h2>"
+    if (correct <=15) {
+      test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 2</h2>"
     };
     get("test_status").innerHTML = "Тест завершён";
     // resets the variable to allow users to restart the test
