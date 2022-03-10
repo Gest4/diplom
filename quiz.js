@@ -30,7 +30,7 @@ var questions = [
     answer: "C"
   },
   {
-    question: "Какая команда меняет имя устройства Cisco?",
+    question: "Какая команда меняет имя устройства Cisco?",//5
     a: "NAME",
     b: "HOSTNAME",
     c: "HOST",
@@ -38,10 +38,17 @@ var questions = [
   },
   {
     question: "Какая команда меняет шлюз устройства Cisco?",
-    a: "default-gateway",
-    b: "set-gateway",
-    c: "gateway",
+    a: "ip default-gateway",
+    b: "ip set-gateway",
+    c: "ip gateway",
     answer: "A"
+  },
+  {
+    question: "Какая команда меняет шлюз устройства Cisco?",
+    a: "ip name-domain",
+    b: "ip set-domain",
+    c: "ip domain-name",
+    answer: "C"
   }
 ];
 // this get function is short for the getElementById function
@@ -53,7 +60,7 @@ function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
     test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов оценка 5</h2>"
-    if (correct <=2) {
+    if (correct <=5) {
       test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов оценка 2</h2>"
     };
     get("test_status").innerHTML = "Тест завершён";
