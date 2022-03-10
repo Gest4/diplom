@@ -28,7 +28,14 @@ var questions = [
           b: "CONT",
           c: "CONF T",
           answer: "C"
-        }
+        },
+        {
+            question: "Какая команда меняет имя устройства Cisco?",
+            a: "TERM",
+            b: "CONT",
+            c: "CONF T",
+            answer: "C"
+          }
   ];
 // this get function is short for the getElementById function
 function get(x){
