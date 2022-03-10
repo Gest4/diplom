@@ -186,11 +186,11 @@ function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
     test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 5</h2>"
-    if (correct <=24) {
+  if (correct <=24) {
       test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 4</h2>"
-    if (correct <=21) {
+  if (correct <=21) {
       test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 3</h2>"
-    if (correct <=18) {
+  if (correct <=18) {
       test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 2</h2>"
     }}};
     get("test_status").innerHTML = "Тест завершён";
