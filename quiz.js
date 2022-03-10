@@ -6,7 +6,7 @@ var questions = [
       a: "1",
       b: "3",
       c: "10",
-      answer: "B"
+      answer: "A"
     },
   {
       question: "What is 8 x 12?",
