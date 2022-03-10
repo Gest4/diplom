@@ -25,14 +25,14 @@ function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
     test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
-    get("test_status").innerHTML = "Test completed";
+    get("test_status").innerHTML = "Тест завершён";
     // resets the variable to allow users to restart the test
     pos = 0;
     correct = 0;
     // stops rest of renderQuestion function running when test is completed
     return false;
   }
-  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+  get("test_status").innerHTML = "Вопрос "+(pos+1)+" из "+questions.length;
 
   question = questions[pos].question;
   chA = questions[pos].a;
