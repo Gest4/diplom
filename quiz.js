@@ -9,20 +9,6 @@ var questions = [
       answer: "B"
     },
   {
-      question: "What is 7 x 4?",
-      a: "21",
-      b: "27",
-      c: "28",
-      answer: "C"
-    },
-  {
-      question: "What is 16 / 4?",
-      a: "4",
-      b: "6",
-      c: "3",
-      answer: "A"
-    },
-  {
       question: "What is 8 x 12?",
       a: "88",
       b: "112",
@@ -59,7 +45,7 @@ function renderQuestion(){
   test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label><br><br>";
-  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Далее</button>";
 }
 function checkAnswer(){
   // use getElementsByName because we have an array which it will loop through
