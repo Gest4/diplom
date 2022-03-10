@@ -185,7 +185,7 @@ function get(x){
 function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
-    test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 5</h2>"
+      test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 5</h2>"
   if (correct <=24) {
       test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 4</h2>"
   if (correct <=21) {
