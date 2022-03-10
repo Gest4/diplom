@@ -24,7 +24,7 @@ function get(x){
 function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
-    test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+    test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов</h2>";
     get("test_status").innerHTML = "Тест завершён";
     // resets the variable to allow users to restart the test
     pos = 0;
