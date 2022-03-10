@@ -2,41 +2,48 @@ var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correc
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
 var questions = [
   {
-      question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",
-      a: "1",
-      b: "3",
-      c: "10",
-      answer: "A"
-    },
+    question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",
+    a: "1",
+    b: "3",
+    c: "10",
+    answer: "A"
+  },
   {
-      question: "Какой ip адрес у шлюза/роутера, если у устройства в той же подсети адрес 192.168.0.2, подсеть 255.255.255.254?",
-      a: "192.168.1.1",
-      b: "192.168.0.1",
-      c: "10.0.0.1",
-      answer: "B"
-    },
-    {
-        question: "Какая команда вызывает удобную оболочку для настройки сервера в Windows Server?",
-        a: "SCONFIG",
-        b: "MSCONFIG",
-        c: "CONFIG",
-        answer: "A"
-      },
-      {
-          question: "Какая команда инициализирует вход в режим конфигурации Cisco?",
-          a: "TERM",
-          b: "CONT",
-          c: "CONF T",
-          answer: "C"
-        },
-        {
-            question: "Какая команда меняет имя устройства Cisco?",
-            a: "TERM",
-            b: "CONT",
-            c: "CONF T",
-            answer: "C"
-          }
-  ];
+    question: "Какой ip адрес у шлюза/роутера, если у устройства в той же подсети адрес 192.168.0.2, подсеть 255.255.255.254?",
+    a: "192.168.1.1",
+    b: "192.168.0.1",
+    c: "10.0.0.1",
+    answer: "B"
+  },
+  {
+    question: "Какая команда вызывает удобную оболочку для настройки сервера в Windows Server?",
+    a: "SCONFIG",
+    b: "MSCONFIG",
+    c: "CONFIG",
+    answer: "A"
+  },
+  {
+    question: "Какая команда инициализирует вход в режим конфигурации Cisco?",
+    a: "TERM",
+    b: "CONT",
+    c: "CONF T",
+    answer: "C"
+  },
+  {
+    question: "Какая команда меняет имя устройства Cisco?",
+    a: "NAME",
+    b: "HOSTNAME",
+    c: "HOST",
+    answer: "B"
+  },
+  {
+    question: "Какая команда меняет шлюз устройства Cisco?",
+    a: "default-gateway",
+    b: "set-gateway",
+    c: "gateway",
+    answer: "A"
+  }
+];
 // this get function is short for the getElementById function
 function get(x){
   return document.getElementById(x);
