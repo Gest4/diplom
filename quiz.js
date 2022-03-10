@@ -2,16 +2,16 @@ var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correc
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
 var questions = [
   {
-      question: "Сколько в маске 255.255.255.255/32 доступных ip адресов",
+      question: "Сколько в маске 255.255.255.255/32 доступных ip адресов.",
       a: "1",
       b: "3",
       c: "10",
       answer: "A"
     },
   {
-      question: "What is 8 x 12?",
-      a: "88",
-      b: "112",
+      question: "Какой ip адрес у шлюза/роутера, если у устройства в той же подсети адрес 192.168.0.2, подсеть 255.255.255.254",
+      a: "192.168.0.1",
+      b: "192.168.1.1",
       c: "96",
       answer: "C"
     }
