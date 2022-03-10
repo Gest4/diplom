@@ -2,19 +2,33 @@ var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correc
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
 var questions = [
   {
-      question: "Сколько в маске 255.255.255.255/32 доступных ip адресов.",
+      question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",
       a: "1",
       b: "3",
       c: "10",
       answer: "A"
     },
   {
-      question: "Какой ip адрес у шлюза/роутера, если у устройства в той же подсети адрес 192.168.0.2, подсеть 255.255.255.254",
+      question: "Какой ip адрес у шлюза/роутера, если у устройства в той же подсети адрес 192.168.0.2, подсеть 255.255.255.254?",
       a: "192.168.1.1",
       b: "192.168.0.1",
       c: "10.0.0.1",
       answer: "B"
-    }
+    },
+    {
+        question: "Какая команда вызывает удобную оболочку для настройки сервера в Windows Server?",
+        a: "SCONFIG",
+        b: "MSCONFIG",
+        c: "CONFIG",
+        answer: "A"
+      },
+      {
+          question: "Какая команда инициализирует вход в режим конфигурации Cisco?",
+          a: "TERM",
+          b: "CONT",
+          c: "CONF T",
+          answer: "C"
+        }
   ];
 // this get function is short for the getElementById function
 function get(x){
@@ -24,7 +38,10 @@ function get(x){
 function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
-    test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов</h2>";
+    test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов оценка 5</h2>"
+    if (correct <=2) {
+      test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов оценка 2</h2>"
+    };
     get("test_status").innerHTML = "Тест завершён";
     // resets the variable to allow users to restart the test
     pos = 0;
