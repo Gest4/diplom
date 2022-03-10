@@ -2,7 +2,7 @@ var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correc
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
 var questions = [
   {
-    question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",//70%=3 80%=
+    question: "Сколько в маске 255.255.255.255/32 доступных ip адресов?",//70%=3 85%=4
     a: "1",
     b: "3",
     c: "10",
@@ -65,11 +65,11 @@ var questions = [
     answer: "B"
   },
   {
-    question: "...",//10
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "B"
+    question: "Что такое DHCP",//10
+    a: "Сервер который выдаёт ip адрес",
+    b: "Сервер который выдаёт mac адрес",
+    c: "Сервер который выдаёт адрес места жительства",
+    answer: "A"
   },
   {
     question: "...",
@@ -186,9 +186,13 @@ function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
     test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 5</h2>"
-    if (correct <=15) {
+    if (correct <=24) {
+      test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 4</h2>"
+    if (correct <=21) {
+      test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 3</h2>"
+    if (correct <=18) {
       test.innerHTML = "<h2>Вы ответили правильно на "+correct+" из "+questions.length+" вопросов, оценка 2</h2>"
-    };
+    }}};
     get("test_status").innerHTML = "Тест завершён";
     // resets the variable to allow users to restart the test
     pos = 0;
