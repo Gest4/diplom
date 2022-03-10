@@ -13,7 +13,7 @@ var questions = [
       a: "192.168.1.1",
       b: "192.168.0.1",
       c: "10.0.0.1",
-      answer: "C"
+      answer: "B"
     }
   ];
 // this get function is short for the getElementById function
