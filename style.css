@@ -67,5 +67,14 @@ html, body {
 	}
 	.mt-3{
     margin-top: 1rem!importan;
-
+	}
+	.whiteb{
+		color: white;
+	}
+	body {
+		background: url(img/back.png);
+    background-size: 100%;
+	}
+	.text-justify{
+		color: white;
 	}
