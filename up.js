@@ -10,7 +10,7 @@
         }
     }
 
-    // плавный скролл наверх 
+    // плавный скролл наверх
     toTopBtn.addEventListener('click', function () {
         window.scrollBy({
             top: -document.documentElement.scrollHeight,
