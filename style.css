@@ -67,8 +67,10 @@ html, body {
 }
 .whiteb{
 	color: white;
-	padding-top: 20px;
 }
 .h7{
 	font-size:65%;
+}
+.pad1{
+ padding-top: 10px;
 }
