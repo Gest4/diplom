@@ -61,7 +61,13 @@ b. Сеть Офиса Branch1 LAN2: 192.168.N.0/27;<br>
 c. Сеть Офиса Branch2 Lan3: 192.168.N.216/29;<br>
 d. Сеть ISP: 10.0.N.248/30;<br>
 e. Сеть управления MNG: 176.18.N.32/28;</p>
-Номер участника будет 3, в программе "PUTTY" вводим команду <code>conf t</code>, далее <code>interface #</code>, где # это номер интерфейса, например: fa0/11. Далее настраиваем по схеме.
+Номер участника будет 3, в программе "PUTTY" вводим команду <code>conf t</code>, далее <code>interface #</code>, где # это номер интерфейса, например: fa0/11. Далее <code>ip address IP MASK</code> где IP - это ip-адрес, а MASK - маска сети, например: <code>ip address 192.168.0.2 255.255.255.0</code> далее аналогично настраиваем по схеме:<br>
+a. <code>ip address 192.168.3.190 255.255.255.192</code><br>
+b. <code>ip address 192.168.3.0 255.255.255.224</code><br>
+c. <code>ip address 192.168.3.216 255.255.255.248</code><br>
+d. <code>interface G0/0; ip address 10.0.3.248 255.255.255.252</code><br>
+e. <code>ip address 176.18.3.32 255.255.255.240</code>
+
 </div>
 
 <div class="mt-5 text-justify">
