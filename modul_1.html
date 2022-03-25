@@ -123,7 +123,7 @@
                     нетэгируемой VLAN используйте VLAN 11. Все неиспользуемые интерфейсы отключите
                     и переведите в VLAN 99;</p>
                     Выполняем подключение через консоль на роутер SW1 и вводим <code>conf t</code>; <code>vlan 77</code>; <code>interface Fa0/7-8</code>; <code>ip address 192.168.3.1 255.255.255.224</code><br>
-                    Выполняем подключение через консоль на роутер SW1 и вводим <code>conf t</code>; <code>vlan 77</code>; <code>interface Fa0/7-8</code>; <code>ip address 192.168.3.2 255.255.255.224</code><br>
+                    Выполняем подключение через консоль на роутер SW2 и вводим <code>conf t</code>; <code>vlan 77</code>; <code>interface Fa0/7-8</code>; <code>ip address 192.168.3.2 255.255.255.224</code><br>
                   </div>
 
                   <div class="mt-5 text-justify">
@@ -132,7 +132,7 @@
                       быть равно 60; MAC адреса должны оставаться в настройках после перезагрузки; способ
                       отработки нарушения безопасности – блокировка без уведомления;
                     </p>
-                    <!--Ничего-->
+                    Выполняем подключение через консоль на роутер SW2 и вводим <code>conf t</code>; <code>vlan 11</code>; <code>interface fa0/11</code>; <code>switchport mode access</code>; <code>switchport port-security</code>; <code>switchport port-security maximum 60</code>; <code>switchport port-security mac-address sticky</code>;
                   </div>
 
                   <div class="mt-5 text-justify">
