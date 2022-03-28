@@ -202,7 +202,7 @@
                                 Все остальные сетевые устройства должны использовать его в качестве сервера времени.
                                 Настройте временную зону с названием MSK, укажите разницу с UTC +5 часов.
                                 Используйте стратум 2. Используйте для синхронизации клиентов аутентификацию MD5 с
-                                ключом timestamp ;
+                                ключом timestamp;
                               </p>
                               Выполняем подключение через консоль на маршрутизатор CO-Router и выполняем: <code>conf t</code>; <code>clock timezone MSK 3</code>; <code>ntp master 2</code>; <code>clock calendar-valid</code>; <code>ntp authentication-key 1 md5 15060E1F10243F34 7</code>; <code>ntp authenticate</code>; <code>ntp trusted-key 1</code>
                             </div>
@@ -211,22 +211,28 @@
                               <p class="h6">19. На CO-Router настройте протокол динамической конфигурации хостов для сети
                                 LAN2. Устройства должны получать корректные ip/netmask и gateway. Компьютер
                                 BRANCH1-CENTOS должен получать адрес 192.168.N.13;</p>
-                                <!--Ничего-->
-                              </div>
+                                Выполняем подключение через консоль на маршрутизатор CO-Router и выполняем: <code>conf t</code>; <code>ip dhcp pool POOL-1</code>; <code>network 192.168.3.0 255.255.255.224</code>; <code>default-router 192.168.3.0</code>; <code>dns-server 192.168.3.1</code>; <code>domain-name fincorp.ru</code>;
+                              </div>; <code>lease</code>
 
                               <div class="mt-5 text-justify">
                                 <p class="h6">20. Для тестового запуска протокола IPv6 необходимо настроить следующее
                                   - включить поддержку IPv6 маршрутизации на двух маршрутизаторх по протоколу
                                   OSPFv3<br>
                                   - настроить IPv6 адреса на LoopBack 0 интерфейсе CO-Router 2001:765:916:C0::1/64<br>
-                                  - настроить IPv6 адреса на LoopBack 0 интерфейсе ABC-Router 2001:765:916:<br>
-                                  ABC:1/64</p>
-                                  <!--Ничего-->
+                                  - настроить IPv6 адреса на LoopBack 0 интерфейсе ABC-Router 2001:765:916:ABC:1/64</p><br>
+                                  Выполняем подключение через консоль на обоих маршрутизаторах CO-Router и ABC-Router, и выполняем: <code>conf t</code>; <code>ipv6 unicast-routing</code>; <code>interface G0/0</code>; <code>####1####</code>;
+                                  <code>ipv6 ospf 1 area 0</code>; <code>ipv6 router ospf 1</code>; <code>####2####</code><br>
+                                  #1#<br>
+                                  на CO-Router <code>ipv6 address 2001:765:916:C0::1/64</code><br>
+                                  на ABC-Router <code>ipv6 address 2001:765:916:ABC:1/64</code><br>
+                                  #2#<br>
+                                  на CO-Router <code>router-id 1.1.1.1</code><br>
+                                  на ABC-Router <code>router-id 2.2.2.2</code>
                                 </div>
 
                                 <div class="mt-5 text-justify">
                                   <p class="h6">21. С ПК Server должен обеспечиваться доступ ко всем сетевым устройствам.</p>
-                                  <!--Ничего-->
+                                  Выполняем подключение через консоль на роутер SW2 и вводим: <code>conf t</code>; <code>interface Fa0/11</code>; <code>no shutdown</code>;
                                 </div>
 
                               </div>
