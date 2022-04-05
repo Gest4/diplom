@@ -72,45 +72,45 @@ var questions = [
     answer: "A"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
+    question: "Команда установки Apache",
+    a: "install apache2",
+    b: "sudo apt install apache2",
+    c: "apt apache2",
+    answer: "B"
+  },
+  {
+    question: "Дата создания интернета",
+    a: "1969",
+    b: "1970",
+    c: "1960",
     answer: "A"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
+    question: "Дата создания Линукс",
+    a: "1980",
+    b: "1990",
+    c: "1991",
+    answer: "C"
+  },
+  {
+    question: "Дата создания Windows",
+    a: "1980",
+    b: "1985",
+    c: "1990",
+    answer: "B"
+  },
+  {
+    question: "Дата создания протокола TCP/IP",//15
+    a: "1972",
+    b: "1970",
+    c: "1980",
     answer: "A"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
-  },
-  {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
-  },
-  {
-    question: "...",//15
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
-  },
-  {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
+    question: "Дата первого сайта",
+    a: "1991",
+    b: "1990",
+    c: "1980",
     answer: "A"
   },
   {
