@@ -43,7 +43,7 @@ Debian 10 и CentOS 8</p>
 
 <div class="mt-4 text-justify">
 <p class="h6">1. Установите ПО Oracle VirtualBox;</p>
-<!--Ничего-->
+Установщик находится на рабочем столе или в папке.
 </div>
 
 <div class="mt-5 text-justify">
@@ -51,81 +51,144 @@ Debian 10 и CentOS 8</p>
 1 гб;<br> Динамичный виртуальный жесткий диск VDI объемом 10 гб;<br> Включен PAE/NX;<br> Тип
 подключения сетевого адаптера – сетевой мост;
 </p>
-<!--Ничего-->
+Машина > Создать машину(Рисунок 1.) > Устанавливаем значение ОП(Рисунок 2.) > Устанавливаем тип диска(Рисунок 3.).
+
+<div>
+  <figure class="text-justify figure">
+  <img src="img/linux1.png" width="365" class="mt-3 figure-img">
+  <figcaption class="figure-caption text-center font-weight-bold">Рисунок 1.</figcaption>
+  </figure>
+
+  <figure class="text-justify figure">
+  <img src="img/linux2.png" width="365" class="mt-3 figure-img">
+  <figcaption class="figure-caption text-center font-weight-bold">Рисунок 2.</figcaption>
+  </figure>
+
+  <figure class="text-justify figure">
+  <img src="img/linux3.png" width="365" class="mt-3 figure-img">
+  <figcaption class="figure-caption text-center font-weight-bold">Рисунок 3.</figcaption>
+
 </div>
+</br>
+Динамичный виртуальный диск(Рисунок 4.) > Указываем тип и размер (Рисунок 5.) > Создать.
+<div>
+
+<figure class="text-justify figure">
+<img src="img/linux4.png" width="365" class="mt-3 figure-img">
+<figcaption class="figure-caption text-center font-weight-bold">Рисунок 4.</figcaption>
+</figure>
+
+<figure class="text-justify figure">
+<img src="img/linux5.png" width="365" class="mt-3 figure-img">
+<figcaption class="figure-caption text-center font-weight-bold">Рисунок 5.</figcaption>
+</figure>
+
+</div>
+
+</div>
+
+
 
 <div class="mt-5 text-justify">
 <p class="h6">3. Установите на виртуальную машину ОС Debian10 (пароль
 суперпользователя: toor!; полное имя пользователя: user1; пароль для пользователя user1:
-toortoor!)</p>
-<!--Ничего-->
+toortoor!);</p>
+Монтируем ISO образ, производим установку. В окне запуска установки выбераем «Graphical install» > Язык установки - Русский > Страна - Российская федерация > Раскладка - Русская > Сочетание Alt + Shift > Пароль суперпользователя: toor! > полное имя пользователя: user1 > Пользователь: user1 > пароль: toortoor!
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">4. Задайте имя компьютера: BRANCH1-DEBIAN;
 </p>
-<!--Ничего-->
+В терминале вводим: <code>hostname BRANCH1-DEBIAN</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">5. Создайте пользователей user-1N, user-2N, user-3N (где N – номер участника)
 пароли соответственно: R!123456 R!234567 R!345678 ;</p>
-<!--Ничего-->
+Вводим последовательность команд:<br>
+<code>sudo adduser user-13</code> <code>R!123456</code><br>
+<code>sudo adduser user-23</code> <code>R!234567</code><br>
+<code>sudo adduser user-33</code> <code>R!345678</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">6. Создайте группу ablmpx и добавьте в нее пользователя user-2N (где N – номер
 участника);</p>
-<!--Ничего-->
+Вводим последовательность команд:<br>
+<code>sudo usermod -a -G ablmpx user-23</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">7. Пропишите в список репозиториев для скачивания свободно
 распространяемого ПО сервер http://mirror.abimoscow.ru/deb/ с наибольшим приоритетом,
 псевдонимом релиза wheezy и компонентом main. Пропишите запись как на бинарные
-пакеты, так и на пакеты с исходным кодом.</p>
-<!--Ничего-->
+пакеты, так и на пакеты с исходным кодом;</p>
+Вводим последовательность команд:<br>
+<code>sudo nano /etc/apt/sources.list</code><br>
+В конец файла вставляем команду:<br>
+<code>deb http://mirror.abimoscow.ru/deb/ wheezy main</code> сохраняем файл.<br>
+<code>sudo apt-get update</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">8. Установите web-сервер Apache. Замените стартовую страницу (стартовая
 страница должна содержать ТОЛЬКО сообщение «Abilympics Russia»);
 </p>
-<!--Ничего-->
+<code>sudo apt update</code><br>
+<code>sudo apt install apache2</code><br>
+<code>sudo nano /var/www/html/index.html</code><br>
+Вводим в index.html, это:<br>
+<code>Abilympics Russia</code><br>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">9. Загрузите в виртуальную среду готовый образ ОС CentOS 8. Для входа
 в систему используйте логин/пароль root/toortoor;</p>
-<!--Ничего-->
+Создаём машину, монтируем образ, устанавливаем.
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">10. Задайте имя компьютера: BRANCH1-CENTOS;</p>
-<!--Ничего-->
+<code>sudo hostnamectl set-hostname BRANCH1-CENTOS</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">11. Установите пароль на суперпользователя root: toormoscow;
 </p>
-<!--Ничего-->
+Вводим последовательность:<br>
+<code>sudo passwd</code><br>
+vtoormoscow</code>
 </div>
 
 <div class="mt-5 text-justify">
-<p class="h6">12. Настройте сетевой интерфейс согласно Схеме;</p>
-<!--Ничего-->
+<p class="h6">12. Настройте сетевой интерфейс согласно Схеме 1.;</p>
+Устанавливаем ip адреса:<br>
+<code>192.168.3.12</code><br>
+<code>192.168.3.13</code>
+</div>
+
+<div align="center">
+  <figure class="text-justify figure">
+    <img src="img/scheme.png" width="400" class="mt-3 img2 figure-img">
+    <figcaption class="figure-caption text-center font-weight-bold">Схема 1.</figcaption>
+  </figure>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">13. Измените DNS-суффикс для данной машины на russia.ru;</p>
-<!--Ничего-->
+Вводим последовательность:<br>
+<code>sudo nano /etc/resolvconf/resolv.conf.d/head</code><br>
+<code>nameserver russia.ru</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">14. Разрешите удаленное подключение по протоколу SSH для суперпользователя
-root.
+root;
 </p>
-<!--Ничего-->
+Вводим последовательность:<br>
+<code>/etc/ssh/sshd_config</code><br>
+Редактируем строчку: "<code>PermitRootLogin no</code>" на "<code>PermitRootLogin yes</code>"<br>
+<code>service ssh restart</code><br>
 </div>
 
 </div>
