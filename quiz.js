@@ -107,7 +107,7 @@ var questions = [
     answer: "A"
   },
   {
-    question: "Дата первого сайта?",
+    question: "Дата первого сайта в мире?",
     a: "1991",
     b: "1990",
     c: "1980",
@@ -135,46 +135,46 @@ var questions = [
     answer: "B"
   },
   {
-    question: "В каком году соревнования Абилимпикс проводятся России?",//20
+    question: "С какого года соревнования Абилимпикс проводятся России?",//20
     a: "2000",
     b: "2014",
     c: "2015",
     answer: "B"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
+    question: "Команда обновление базы данных пакетов Linux.",
+    a: "get-apt update",
+    b: "sudo apt-get",
+    c: "sudo apt-get update",
+    answer: "C"
+  },
+  {
+    question: "Команда запуска редактора реестра.",
+    a: "REGEDIT",
+    b: "RGEDIT",
+    c: "RESEDIT",
     answer: "A"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
+    question: "Команда проверки диска.",
+    a: "CHECKDISK",
+    b: "CHECKDSK",
+    c: "CHKDSK",
+    answer: "C"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
+    question: "Команда дефрагментации диска.",
+    a: "DEFRAG DISK",
+    b: "DEFRAG",
+    c: "DEFRAGMENT",
+    answer: "B"
   },
   {
-    question: "...",
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
-  },
-  {
-    question: "...",//25
-    a: "...",
-    b: "...",
-    c: "...",
-    answer: "A"
+    question: "Команда выхода из командной строки.",//25
+    a: "END",
+    b: "EXIT",
+    c: "EX",
+    answer: "B"
   }
 ];
 // this get function is short for the getElementById function
