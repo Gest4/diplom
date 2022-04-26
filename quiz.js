@@ -79,7 +79,7 @@ var questions = [
     answer: "B"
   },
   {
-    question: "Дата создания интернета?",
+    question: "Дата создания интернета в мире?",
     a: "1969",
     b: "1970",
     c: "1960",
@@ -115,9 +115,9 @@ var questions = [
   },
   {
     question: "В какой стране был основан Абилимпикс?",
-    a: "1975",
-    b: "1970",
-    c: "1971",
+    a: "Россия",
+    b: "США",
+    c: "Япония",
     answer: "C"
   },
   {
@@ -210,9 +210,9 @@ function renderQuestion(){
   test.innerHTML = "<h3>"+question+"</h3><br>";
   // display the answer options
   // the += appends to the data we started on the line above
-  test.innerHTML += "<h4><label> <input type='radio' name='choices' value='A'> "+chA+"</label></h4><br><br>";
-  test.innerHTML += "<h4><label> <input type='radio' name='choices' value='B'> "+chB+"</label></h4><br><br>";
-  test.innerHTML += "<h4><label> <input type='radio' name='choices' value='C'> "+chC+"</label></h4><br><br>";
+  test.innerHTML += "<h4><label> <input type='radio' name='choices' value='A'> "+chA+"</label></h4><br>";
+  test.innerHTML += "<h4><label> <input type='radio' name='choices' value='B'> "+chB+"</label></h4><br>";
+  test.innerHTML += "<h4><label> <input type='radio' name='choices' value='C'> "+chC+"</label></h4><br>";
   test.innerHTML += "<button onclick='checkAnswer()'>Далее</button>";
 }
 function checkAnswer(){
