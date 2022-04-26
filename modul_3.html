@@ -43,14 +43,14 @@
 Debian 10 и CentOS 8</p>
 
 <div class="mt-4 text-justify">
-<p class="h6">1. Установите ПО Oracle VirtualBox;</p>
+<p class="h6">1. Установите ПО Oracle VirtualBox.</p>
 Установщик находится на рабочем столе или в папке.
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">2. Создайте ВМ со след. параметрами: имя – BRANCH1-DEBIAN;<br> Объем ОП –
 1 гб;<br> Динамичный виртуальный жесткий диск VDI объемом 10 гб;<br> Включен PAE/NX;<br> Тип
-подключения сетевого адаптера – сетевой мост;
+подключения сетевого адаптера – сетевой мост.
 </p>
 Машина > Создать машину(Рисунок 1.) > Устанавливаем значение ОП(Рисунок 2.) > Устанавливаем тип диска(Рисунок 3.).
 
@@ -93,19 +93,19 @@ Debian 10 и CentOS 8</p>
 <div class="mt-5 text-justify">
 <p class="h6">3. Установите на виртуальную машину ОС Debian10 (пароль
 суперпользователя: toor!; полное имя пользователя: user1; пароль для пользователя user1:
-toortoor!);</p>
+toortoor!).</p>
 Монтируем ISO образ, производим установку. В окне запуска установки выбераем «Graphical install» > Язык установки - Русский > Страна - Российская федерация > Раскладка - Русская > Сочетание Alt + Shift > Пароль суперпользователя: toor! > полное имя пользователя: user1 > Пользователь: user1 > пароль: toortoor!
 </div>
 
 <div class="mt-5 text-justify">
-<p class="h6">4. Задайте имя компьютера: BRANCH1-DEBIAN;
+<p class="h6">4. Задайте имя компьютера: BRANCH1-DEBIAN.
 </p>
 В терминале вводим: <code>hostname BRANCH1-DEBIAN</code>
 </div>
 
 <div class="mt-5 text-justify">
 <p class="h6">5. Создайте пользователей user-1N, user-2N, user-3N (где N – номер участника)
-пароли соответственно: R!123456 R!234567 R!345678 ;</p>
+пароли соответственно: R!123456 R!234567 R!345678.</p>
 Вводим последовательность команд:<br>
 <code>sudo adduser user-13</code> <code>R!123456</code><br>
 <code>sudo adduser user-23</code> <code>R!234567</code><br>
@@ -114,7 +114,7 @@ toortoor!);</p>
 
 <div class="mt-5 text-justify">
 <p class="h6">6. Создайте группу ablmpx и добавьте в нее пользователя user-2N (где N – номер
-участника);</p>
+участника).</p>
 Вводим последовательность команд:<br>
 <code>sudo usermod -a -G ablmpx user-23</code>
 </div>
@@ -123,7 +123,7 @@ toortoor!);</p>
 <p class="h6">7. Пропишите в список репозиториев для скачивания свободно
 распространяемого ПО сервер http://mirror.abimoscow.ru/deb/ с наибольшим приоритетом,
 псевдонимом релиза wheezy и компонентом main. Пропишите запись как на бинарные
-пакеты, так и на пакеты с исходным кодом;</p>
+пакеты, так и на пакеты с исходным кодом.</p>
 Вводим последовательность команд:<br>
 <code>sudo nano /etc/apt/sources.list</code><br>
 В конец файла вставляем команду:<br>
@@ -133,7 +133,7 @@ toortoor!);</p>
 
 <div class="mt-5 text-justify">
 <p class="h6">8. Установите web-сервер Apache. Замените стартовую страницу (стартовая
-страница должна содержать ТОЛЬКО сообщение «Abilympics Russia»);
+страница должна содержать ТОЛЬКО сообщение «Abilympics Russia»).
 </p>
 <code>sudo apt update</code><br>
 <code>sudo apt install apache2</code><br>
@@ -144,17 +144,17 @@ toortoor!);</p>
 
 <div class="mt-5 text-justify">
 <p class="h6">9. Загрузите в виртуальную среду готовый образ ОС CentOS 8. Для входа
-в систему используйте логин/пароль root/toortoor;</p>
+в систему используйте логин/пароль root/toortoor.</p>
 Создаём машину, монтируем образ, устанавливаем.
 </div>
 
 <div class="mt-5 text-justify">
-<p class="h6">10. Задайте имя компьютера: BRANCH1-CENTOS;</p>
+<p class="h6">10. Задайте имя компьютера: BRANCH1-CENTOS.</p>
 <code>sudo hostnamectl set-hostname BRANCH1-CENTOS</code>
 </div>
 
 <div class="mt-5 text-justify">
-<p class="h6">11. Установите пароль на суперпользователя root: toormoscow;
+<p class="h6">11. Установите пароль на суперпользователя root: toormoscow.
 </p>
 Вводим последовательность:<br>
 <code>sudo passwd</code><br>
@@ -162,7 +162,7 @@ vtoormoscow</code>
 </div>
 
 <div class="mt-5 text-justify">
-<p class="h6">12. Настройте сетевой интерфейс согласно Схеме 1.;</p>
+<p class="h6">12. Настройте сетевой интерфейс согласно Схеме 1.</p>
 Устанавливаем ip адреса:<br>
 <code>192.168.3.12</code><br>
 <code>192.168.3.13</code>
@@ -176,7 +176,7 @@ vtoormoscow</code>
 </div>
 
 <div class="mt-5 text-justify">
-<p class="h6">13. Измените DNS-суффикс для данной машины на russia.ru;</p>
+<p class="h6">13. Измените DNS-суффикс для данной машины на russia.ru.</p>
 Вводим последовательность:<br>
 <code>sudo nano /etc/resolvconf/resolv.conf.d/head</code><br>
 <code>nameserver russia.ru</code>
@@ -184,7 +184,7 @@ vtoormoscow</code>
 
 <div class="mt-5 text-justify">
 <p class="h6">14. Разрешите удаленное подключение по протоколу SSH для суперпользователя
-root;
+root.
 </p>
 Вводим последовательность:<br>
 <code>/etc/ssh/sshd_config</code><br>
